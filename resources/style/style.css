@@ -1,0 +1,198 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.banner {
+  display: flex;
+}
+
+header {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+  }
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+
+}
+
+nav img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: inline-flex;
+
+  font-weight: bold;
+}
+
+nav li {
+  display: flex;
+  position: relative;
+  justify-content: center;
+    padding: 0 1rem;
+}
+
+.mobile-nav {
+  display: none;
+
+}
+
+
+header .banner {
+  justify-content: flex-end;
+
+}
+
+.caption {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+  }
+
+.caption h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+
+.navigation {
+  display: inline-flex;
+  min-width: 960px;
+  background-color: cadetblue;
+  align-items: center;
+}
+
+.navigation span {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.services .types {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
+.services img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.services img.paper-icon {
+  width: 3.5rem;
+}
+
+.business-info .container {
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title span {
+margin-bottom: 5rem;
+}
+
+.info .title {
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  padding: 4rem 2rem;
+  background-color: transparent;
+  color: black;
+  align-items: center;
+}
+
+.footer .logo {
+  display: flex;
+  background-color: teal;
+  color: black;
+  margin: 4rem auto 4rem 4rem;
+  height: 1.5rem;
+}
+
+.footer img, .footer span {
+padding: 0 1rem 0 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+.info {
+  width: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
+footer span {
+      font-size: 0.75rem;
+}
+}
